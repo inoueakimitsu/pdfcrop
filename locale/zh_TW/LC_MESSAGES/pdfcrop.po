@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_TW\n"
+
+msgid "Copy (Ctrl + C)"
+msgstr "複製 (Ctrl + C)"
+
+msgid "Pages to Copy:"
+msgstr "複製頁數:"
+
+msgid "Open"
+msgstr "開啟"
+
+msgid "Capture"
+msgstr "擷取"
+
+msgid "Click (or Ctrl+C): Copy current and previous pages | Drag: Copy selected area"
+msgstr "點擊 (Ctrl+C)：擷取目前和前一頁 | 拖曳：擷取選取區域"
+
+msgid "Copied pages {start} to {end}"
+msgstr "已複製第 {start} 到 {end} 頁"
+
+msgid "Captured screenshot to clipboard"
+msgstr "已將螢幕截圖複製到剪貼簿"
+
+msgid "PDF Copy Error"
+msgstr "PDF複製錯誤"
+
+msgid "Error"
+msgstr "錯誤"
+
+msgid "Open PDF File"
+msgstr "開啟PDF檔案"
+
+msgid "PDF files"
+msgstr "PDF檔案"
+
+msgid "All files"
+msgstr "所有檔案"
+
+msgid "File"
+msgstr "檔案"
+
+msgid "Exit"
+msgstr "結束"
+
+msgid "Help"
+msgstr "說明"
+
+msgid "License Information"
+msgstr "授權資訊"
+
+msgid "PDF file not found: {filepath}"
+msgstr "找不到PDF檔案: {filepath}"
+
+msgid "PDF file has no pages: {filepath}"
+msgstr "PDF檔案沒有頁面: {filepath}"
+
+msgid "{message} (file: {filepath})"
+msgstr "{message} (檔案: {filepath})"
+
+msgid "{message} (settings file: {filepath})"
+msgstr "{message} (設定檔: {filepath})"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Language Changed"
+msgstr "語言已變更"
+
+msgid "Please restart the application for the language change to take effect."
+msgstr "請重新啟動應用程式以套用語言變更。"
+
+msgid "Licenses"
+msgstr "授權"

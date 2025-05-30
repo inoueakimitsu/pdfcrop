@@ -1,0 +1,28 @@
+# PDFCrop Authors
+
+- Akimitsu INOUE
+
+> Most code is licensed as AGPL v3 (see COPYING) due to PyMuPDF dependency.
+
+## External Projects
+
+- PyMuPDF
+  - License: AGPL v3.0
+  - Type: AGPL
+  - Website: [https://pymupdf.io/](https://pymupdf.io/)
+- MuPDF
+  - License: AGPL v3.0
+  - Type: AGPL
+  - Website: [https://mupdf.com/](https://mupdf.com/)
+- PySide6 (Qt for Python)
+  - License: LGPL v3.0
+  - Type: LGPL
+  - Website: [https://wiki.qt.io/Qt_for_Python](https://wiki.qt.io/Qt_for_Python)
+- Pillow
+  - License: HPND License
+  - Type: MIT
+  - Website: [https://pillow.readthedocs.io/](https://pillow.readthedocs.io/)
+- pytest
+  - License: MIT License
+  - Type: MIT
+  - Website: [https://pytest.org/](https://pytest.org/)

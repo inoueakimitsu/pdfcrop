@@ -1,0 +1,95 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          # Remove fake 'pil' package if it exists
+          python -m pip uninstall -y pil || true
+          # Force reinstall Pillow to ensure we have the real package
+          python -m pip install --upgrade --force-reinstall Pillow
+
+      - name: Verify Pillow installation
+        run: |
+          python -c "import PIL, sys; print('PIL imported from:', PIL.__file__); print('has ImageDraw:', hasattr(PIL, 'ImageDraw'))"
+
+      - name: Run tests
+        run: python -m pytest
+
+  build:
+    needs: test
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          # Remove fake 'pil' package if it exists
+          python -m pip uninstall -y pil || true
+          # Force reinstall Pillow to ensure we have the real package
+          python -m pip install --upgrade --force-reinstall Pillow
+          pip install pyinstaller
+
+      - name: Verify Pillow installation
+        run: |
+          python -c "import PIL, sys; print('PIL imported from:', PIL.__file__); print('has ImageDraw:', hasattr(PIL, 'ImageDraw'))"
+
+      - name: Get tkinterdnd2 path
+        id: get_tkinterdnd2_path
+        run: |
+          $path = python -c "import tkinterdnd2, os; print(os.path.dirname(tkinterdnd2.__file__))"
+          echo "TKINTERDND2_PATH=$path" >> $env:GITHUB_ENV
+
+      - name: Build executable
+        run: pyinstaller --name pdfcrop --onefile --noconsole --icon src/resources/icons/PDFCrop_icon.ico --add-data "src/resources/icons/PDFCrop_icon.ico;resources/icons" --add-data "$env:TKINTERDND2_PATH;tkinterdnd2" --add-data "locale;locale" --add-data "AUTHORS;." main.py
+
+      - name: Set version
+        run: |
+          $ver = python src/version.py
+          echo "PDFCROP_VERSION=$ver" >> $env:GITHUB_ENV
+
+      - name: Install Inno Setup
+        run: |
+          curl -L -o is.exe https://files.jrsoftware.org/is/6/innosetup-6.4.0.exe
+          ./is.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+
+      - name: Build installer
+        run: |
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" pdfcrop.iss
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/pdfcrop.exe
+            Output/PDFCrop_Setup.exe
+          draft: false
+          prerelease: false
+          generate_release_notes: true

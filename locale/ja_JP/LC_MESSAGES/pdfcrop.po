@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ja_JP\n"
+
+msgid "Copy (Ctrl + C)"
+msgstr "コピー (Ctrl + C)"
+
+msgid "Pages to Copy:"
+msgstr "コピーページ数:"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Capture"
+msgstr "キャプチャ"
+
+msgid "Right-click or Ctrl+Left-click or Ctrl+C: Copy current and previous pages | Right-drag or Shift+Left-drag: Copy selected area"
+msgstr "右クリック または Ctrl+左クリック または Ctrl+C: 現在のページと前ページを抽出 | 右ドラッグ または Shift+左ドラッグ: 選択範囲をキャプチャ"
+
+msgid "Copied pages {start} to {end}"
+msgstr "ページ {start} から {end} をコピーしました"
+
+msgid "Captured screenshot to clipboard"
+msgstr "スクリーンショットをクリップボードに保存しました"
+
+msgid "PDF Copy Error"
+msgstr "PDFコピーエラー"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "Open PDF File"
+msgstr "PDFファイルを開く"
+
+msgid "PDF files"
+msgstr "PDFファイル"
+
+msgid "All files"
+msgstr "すべてのファイル"
+
+msgid "File_F"
+msgstr "ファイル"
+
+msgid "Open_O"
+msgstr "開く"
+
+msgid "Exit_X"
+msgstr "終了"
+
+msgid "Help_H"
+msgstr "ヘルプ"
+
+msgid "License Information_L"
+msgstr "ライセンス情報"
+
+msgid "Exit"
+msgstr "終了"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "License Information"
+msgstr "ライセンス情報"
+
+msgid "PDF file not found: {filepath}"
+msgstr "PDFファイルが見つかりません: {filepath}"
+
+msgid "PDF file has no pages: {filepath}"
+msgstr "PDFファイルにページがありません: {filepath}"
+
+msgid "{message} (file: {filepath})"
+msgstr "{message} (ファイル: {filepath})"
+
+msgid "{message} (settings file: {filepath})"
+msgstr "{message} (設定ファイル: {filepath})"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Language Changed"
+msgstr "言語が変更されました"
+
+msgid "Please restart the application for the language change to take effect."
+msgstr "言語の変更を反映するには、アプリケーションを再起動してください。"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Licenses"
+msgstr "ライセンス"

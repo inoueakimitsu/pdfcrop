@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en_US\n"
+
+msgid "Copy (Ctrl + C)"
+msgstr "Copy (Ctrl + C)"
+
+msgid "Pages to Copy:"
+msgstr "Pages to Copy:"
+
+msgid "Open"
+msgstr "Open"
+
+msgid "Capture"
+msgstr "Capture"
+
+msgid "Right-click or Ctrl+Left-click or Ctrl+C: Copy current and previous pages | Right-drag or Shift+Left-drag: Copy selected area"
+msgstr "Right-click or Ctrl+Left-click or Ctrl+C: Copy current and previous pages | Right-drag or Shift+Left-drag: Copy selected area"
+
+msgid "Copied pages {start} to {end}"
+msgstr "Copied pages {start} to {end}"
+
+msgid "Captured screenshot to clipboard"
+msgstr "Captured screenshot to clipboard"
+
+msgid "PDF Copy Error"
+msgstr "PDF Copy Error"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Open PDF File"
+msgstr "Open PDF File"
+
+msgid "PDF files"
+msgstr "PDF files"
+
+msgid "All files"
+msgstr "All files"
+
+msgid "File"
+msgstr "File"
+
+msgid "Exit"
+msgstr "Exit"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "License Information"
+msgstr "License Information"
+
+msgid "PDF file not found: {filepath}"
+msgstr "PDF file not found: {filepath}"
+
+msgid "PDF file has no pages: {filepath}"
+msgstr "PDF file has no pages: {filepath}"
+
+msgid "{message} (file: {filepath})"
+msgstr "{message} (file: {filepath})"
+
+msgid "{message} (settings file: {filepath})"
+msgstr "{message} (settings file: {filepath})"

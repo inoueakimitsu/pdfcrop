@@ -1,0 +1,55 @@
+.venv/*
+temp/*
+cache/*
+# Python 開発で不要なファイル・ディレクトリ
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+*.pot
+*.mo
+*.db
+*.sqlite3
+*.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+*.bak
+*.swp
+*.swo
+*.orig
+# IDE・エディタ関連
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+# OS・その他
+.DS_Store
+Thumbs.db
+# テスト出力
+htmlcov/
+# pipenv, poetry, hatch
+Pipfile.lock
+poetry.lock
+# Jupyter
+.ipynb_checkpoints/
+# VSCode settings
+.vscode/
+# その他
+*.tmp
+*.temp
+settings.json
+!locale/**/LC_MESSAGES/*.mo
+.claude/settings.local.json

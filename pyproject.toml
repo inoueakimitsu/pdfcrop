@@ -1,0 +1,105 @@
+[project]
+name = "pdfcrop"
+dynamic = ["version"]
+description = "PDF ファイルを表示し、特定のページ範囲をクリップボードにコピーできる軽量なビューアアプリケーションです"
+authors = [
+    { name = "Akimitsu Inoue" }
+]
+dependencies = [
+    "PyMuPDF>=1.23.0",
+    "tkinterdnd2>=0.3.0",
+    # Pillow must be last to ensure it overrides any fake 'pil' package
+    # Avoid 10.4.0 due to missing ImageDraw in Windows wheel (cp311)
+    "pillow>=11.2.1",
+    "pyside6>=6.9.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "AGPL-3.0" }
+
+[project.urls]
+Homepage = "https://github.com/inoueakimitsu/pdfcrop"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "pyinstaller>=6.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.version]
+path = "src/version.py"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+
+[tool.cSpell]
+words = [
+    "pdfview",
+    "tkinter",
+    "tkinterdnd",
+    "fitz",
+    "pycodestyle",
+    "pyflakes",
+    "isort",
+    "pyupgrade",
+    "mypy",
+    "dmypy",
+    "pytype",
+    "htmlcov",
+    "pipenv",
+    "Pipfile",
+    "yscrollcommand",
+    "scrollregion",
+    "keysym",
+    "padx",
+    "pady",
+    "tobytes",
+    "LANCZOS"
+]
+ignoreWords = [
+    "venv",
+    "pycache"
+]
+include = [
+    "**/*"
+]
