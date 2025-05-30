@@ -14,6 +14,10 @@ PDFCrop 是一个用于学习的 PDF 文件查看器。它提供了将当前显�
 - 自动保存最近的文件、窗口位置、缩放倍率和语言设置。
 - 支持的语言：英语、日语、简体中文、繁体中文。
 
+## 截图
+
+![PDFCrop 截图](src/resources/screenshot.png)
+
 ## 安装
 
 ### Windows 用户

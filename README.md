@@ -14,6 +14,10 @@ PDFCrop is a PDF viewer designed for learning purposes. It provides functionalit
 - Recent file information, window geometry, zoom level and language choice are saved automatically.
 - Interface languages: English, Japanese, Simplified Chinese and Traditional Chinese.
 
+## Screenshot
+
+![PDFCrop Screenshot](src/resources/screenshot.png)
+
 ## Installation
 
 ### Windows Users
